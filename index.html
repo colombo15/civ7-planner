@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<div id="main">
+		<div class="hex-container">
+			<div class="hex-group hex-group-4">
+				<div id="hex1" class="hex"> </div>
+				<div id="hex2" class="hex"></div>
+				<div id="hex3" class="hex"></div>
+				<div id="hex44" class="hex"></div>
+			</div>
+			<div class="hex-group hex-group-5">
+				<div id="hex5" class="hex"></div>
+				<div id="hex6" class="hex"></div>
+				<div id="hex7" class="hex"></div>
+				<div id="hex8" class="hex"></div>
+				<div id="hex9" class="hex"></div>
+			</div>
+			<div class="hex-group hex-group-6">
+				<div id="hex10" class="hex"></div>
+				<div id="hex11" class="hex"></div>
+				<div id="hex12" class="hex"></div>
+				<div id="hex13" class="hex"></div>
+				<div id="hex14" class="hex"></div>
+				<div id="hex15" class="hex"></div>
+			</div>
+			<div class="hex-group hex-group-7">
+				<div id="hex16" class="hex"></div>
+				<div id="hex17" class="hex"></div>
+				<div id="hex18" class="hex"></div>
+				<div id="hex-center" class="hex bg-resource">
+					<img src="city-center.png" class="district-img"></img>
+				</div>
+				<div id="hex19" class="hex"></div>
+				<div id="hex20" class="hex"></div>
+				<div id="hex21" class="hex"></div>
+			</div>
+			<div class="hex-group hex-group-6">
+				<div id="hex22" class="hex"></div>
+				<div id="hex23" class="hex"></div>
+				<div id="hex24" class="hex"></div>
+				<div id="hex25" class="hex"></div>
+				<div id="hex26" class="hex"></div>
+				<div id="hex27" class="hex"></div>
+			</div>
+			<div class="hex-group hex-group-5">
+				<div id="hex28" class="hex"></div>
+				<div id="hex29" class="hex"></div>
+				<div id="hex30" class="hex"></div>
+				<div id="hex31" class="hex"></div>
+				<div id="hex32" class="hex"></div>
+			</div>
+			<div class="hex-group hex-group-4 no-bottom-pad">
+				<div id="hex33" class="hex"></div>
+				<div id="hex34" class="hex"></div>
+				<div id="hex35" class="hex"></div>
+				<div id="hex36" class="hex"></div>
+			</div>
+		</div>
+	
+		<div id="option-container">
+			<h3 class="white-text">Terrain</h2>
+
+			<div class="option-group bg-grassland">
+				<input class="option" type="radio" name="option" id="option-grassland" value="bg-grassland"></input>
+				<label for="option-grassland"  class="option-label">GRASSLAND</label>
+			</div>
+			
+			<div class="option-group bg-tundra">
+				<input class="option" type="radio" name="option" id="option-tundra" value="bg-tundra"></input>
+				<label for="option-tundra"  class="option-label">TUNDRA</label>
+			</div>
+
+			<div class="option-group bg-desert">
+				<input class="option" type="radio" name="option" id="option-desert" value="bg-desert"></input>
+				<label for="option-desert"  class="option-label">DESERT</label>
+			</div>
+
+			<div class="option-group bg-coastal">
+				<input class="option" type="radio" name="option" id="option-coastal" value="bg-coastal"></input>
+				<label for="option-coastal"  class="option-label">COASTAL</label>
+			</div>
+
+			<div class="option-group bg-open-ocean">
+				<input class="option" type="radio" name="option" id="option-open-ocean" value="bg-open-ocean"></input>
+				<label for="option-open-ocean"  class="option-label">OPEN OCEAN</label>
+			</div>
+
+			<div class="option-group bg-mountain">
+				<input class="option" type="radio" name="option" id="option-mountain" value="bg-mountain"></input>
+				<label for="option-mountain"  class="option-label">MOUNTAIN</label>
+			</div>
+
+			<div class="option-group bg-tropical">
+				<input class="option" type="radio" name="option" id="option-tropical" value="bg-tropical"></input>
+				<label for="option-tropical"  class="option-label">TROPICAL</label>
+			</div>
+
+			<div class="option-group bg-resource">
+				<input class="option" type="radio" name="option" id="option-resource" value="bg-resource"></input>
+				<label for="option-resource"  class="option-label">RESOURCE</label>
+			</div>
+
+			<h3 class="white-text">Terrain Features</h2>
+			<div class="option-group option-forest">
+				<input class="option" class="option" type="radio" name="option" id="option-forest" value="ft-forest"></input>
+				<label for="option-forest" class="option-label">VEG (FOREST)</label>
+			</div>
+			<div class="option-group bg-open-ocean">
+				<input class="option" class="option" type="radio" name="option" id="option-wet" value="ft-wet"></input>
+				<label for="option-wet" class="option-label">WET</label>
+			</div>
+			<div class="option-group bg-mountain">
+				<input class="option" class="option" type="radio" name="option" id="option-rough" value="ft-rough"></input>
+				<label for="option-rough" class="option-label">ROUGH</label>
+			</div>
+			<div class="option-group option-river">
+				<input class="option" class="option" type="radio" name="option" id="option-river" value="ft-river"></input>
+				<label for="option-river" class="option-label">RIVER</label>
+			</div>
+			<div class="option-group option-river">
+				<input class="option" class="option" type="radio" name="option" id="option-nav-river" value="ft-nav-river"></input>
+				<label for="option-nav-river" class="option-label">NAV RIVER</label>
+			</div>
+
+
+
+
+			<h3 class="white-text">Buildings</h2>
+			<div class="option-group dist-production">
+				<input class="option" class="option" type="radio" name="option" id="option-production" value="dist-production"></input>
+				<label for="option-production" class="option-label">PRODUCTION</label>
+			</div>
+	
+			<div class="option-group dist-science">
+				<input class="option" type="radio" name="option" id="option-science" value="dist-science"></input>
+				<label for="option-science" class="option-label">SCIENCE</label>
+			</div>
+	
+			<div class="option-group dist-food">
+				<input class="option" type="radio" name="option" id="option-food" value="dist-food"></input>
+				<label for="option-food" class="option-label">FOOD</label>
+			</div>
+
+			<div class="option-group dist-gold">
+				<input class="option" type="radio" name="option" id="option-gold" value="dist-gold"></input>
+				<label for="option-gold" class="option-label">GOLD</label>
+			</div>
+
+			<div class="option-group dist-culture">
+				<input class="option" type="radio" name="option" id="option-culture" value="dist-culture"></input>
+				<label for="option-culture" class="option-label">CULTURE</label>
+			</div>
+
+			<div class="option-group dist-happy">
+				<input class="option" type="radio" name="option" id="option-happy" value="dist-happy"></input>
+				<label for="option-happy" class="option-label">HAPPINESS</label>
+			</div>
+
+
+
+			<div class="option-group dist-wonder">
+				<input class="option" type="radio" name="option" id="option-wonder" value="dist-wonder"></input>
+				<label for="option-wonder" class="option-label">WONDER</label>
+			</div>
+
+			<div class="option-group dist-warehouse">
+				<input class="option" type="radio" name="option" id="option-warehouse" value="dist-warehouse"></input>
+				<label for="option-warehouse" class="option-label">WAREHOUSE</label>
+			</div>
+			
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
